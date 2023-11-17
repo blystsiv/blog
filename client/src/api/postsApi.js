@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:3333/v1';
+const API_BASE_URL = 'https://wicked-fatigues-bear.cyclic.app/v1';
 
 export const fetchPosts = async () => {
   try {
