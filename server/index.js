@@ -19,6 +19,10 @@ app.use(morgan('tiny'));
 
 app.use('/v1/posts', postsRouter);
 
+app.get('/', (req, res) => {
+  res.send('Hello, from Post Blog API!');
+});
+
 app.listen(config.PORT, () => {
   console.log(`Server is running on http://localhost:${config.PORT}`);
 });
